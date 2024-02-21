@@ -35,65 +35,106 @@ main {
   grid-row: 1;
   object-fit: cover;
 }
-.email{
-  border: 3px solid rgba(160, 5, 5, 0.656);
-  background-color: #FFF;
+.us{
+  border: 3px solid red;
+  background: linear-gradient(to right, black 0%, black 0%, red 148%, red 100%);
   grid-row: 3/11;
   grid-column: 3/11;
   display: grid;
-  grid-template-rows: 50px 1fr 1fr 1fr;
+  grid-template-rows: 200px auto auto;
   grid-template-columns: 1fr 1fr;
 }
-.email h1{
+.us h1{
   grid-column: 1/3;
   grid-row: 1;
   text-align: center;
   background: linear-gradient(to right, black 0%, black 0%, red 100%, red 100%);
   margin: 0px;
   color: white;
-  font-size: x-large;
+  font-size: 70px;
   font-family: oswald;
+  padding-top: 0px;
 }
-#emailform{
+.p1{
   grid-column: 1/3;
-  grid-row: 2/5;
+  grid-row: 2;
+  color: white;
+  font-size: 19px;
+  text-align: center;
+  padding: 5px;
+  margin-bottom: initial;
+}
+.p2{
+  grid-column: 1/3;
+  grid-row: 3;
+  margin-top: initial;
+  color: white;
+  text-align: center;
+  padding: 5px;
+  font-size: 28px;
+}
+nav{
   display: grid;
   grid-template-columns: repeat(12,1fr);
-  grid-template-rows: repeat(12,auto);
+  background: linear-gradient(to right, white 0%, white 0%, lightgrey 100%, lightgrey 100%);
+  height: 80px;
 }
-.receive{
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+nav button{
+  grid-column: 11/13;
+  margin: 15px;
+  cursor: pointer;
+  color: white;
+  background-color: black;
+  font-family: ozwald;
+  font-size: x-large;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+nav button:hover{
+  background-color: white;
+  color: black;
+}
+.sign{
+  grid-column: 9/11;
   grid-row: 1;
-  grid-column: 1;
-  width: fit-content;
-  padding-right: 10px;
-  padding-top: 15px;
+  font-size: x-large;
+  text-align: center;
+  color: black;
+  padding-top: 5px;
+  margin: 20px;
+  margin-right: 100px;
 }
-.subject{
-  grid-row: 2;
-  width: fit-content;
-}
-.body{
-  grid-row: 3;
-  width: fit-content;
-}
-.receiveButton{
-  grid-column: 2/11;
+.banner{
+  grid-column: 2;
   grid-row: 1;
-  margin-top: 15px;
-  height: fit-content;
 }
-.subjectButton{
-  grid-column: 2/11;
-  grid-row: 2;
-  height: fit-content;
+.apperal{
+  grid-column: 7/9;
+  grid-row: 1;
+  font-size: x-large;
+  text-align: center;
+  color: black;
+  padding-top: 5px;
+  margin: 20px;
+  margin-right: 100px;
 }
-.bodyButton{
-  grid-column: 2/11;
-  grid-row: 3/12;
+.sign::after{
+  content: "⟩";
+  display: inline-block;
+  transform: rotate(90deg);
+  margin-left: 15px;
 }
-.submit{
-  grid-row: 12;
-  grid-column: 4/9;
-  height: fit-content;
-  margin-top: 10px;
+.sign:hover{
+  background-color: black;
+  color: white;
+}
+.apperal::after{
+  content: "⟩";
+  display: inline-block;
+  transform: rotate(90deg);
+  margin-left: 15px;
 }
