@@ -24,3 +24,5 @@ window.addEventListener('DOMContentLoaded', function() {
 //  const malitoLink = `mailto:${recipient}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
 
 //  window.location.href = malitoLink;
+
+
